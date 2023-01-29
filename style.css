@@ -73,13 +73,13 @@ body{
     color: #fff;
     align-items: center;
     justify-content: center;
-    height: 40%;
+    height: 50%;
     width: 100%;
 }
 .weather-forecast{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .future-forecast .today{
     display: flex;
@@ -126,5 +126,37 @@ body{
         justify-content: start;
         align-items: none;
         overflow-y: scroll;
+    }
+    .future-forecast .today{
+        font-size: 30px;
+        height: 100%;
+    }
+    .future-forecast .today .day{
+        position: relative;
+        bottom: 20px;
+    }
+    .future-forecast .today .temp{
+        font-size: 20px;
+        position: relative;
+        bottom: 20px;
+    }
+}
+@media only screen and (max-width:730px){
+    .current-info{
+        /* display: flex; */
+        justify-content: center;
+    }
+    .current-info .time{
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width:730px){
+    body{
+        width: 100vw;
+    }
+}
+@media only screen and (max-width:730px){
+    .location-container .time-zone{
+        text-align: right;
     }
 }
